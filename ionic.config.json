@@ -1,0 +1,7 @@
+{
+  "name": "AR_Menu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

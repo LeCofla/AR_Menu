@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col></ion-col>
+        <ion-col size-lg="6" size-md="6" size-sm="6" size-xl="6">
+          <div class="titulo">
+            <ion-text>Cocteles</ion-text>
+          </div>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let cocteles of cocteles" class="ion-align-items-center">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col size-lg="6" size-md="6" size-sm="6" size-xl="6">
+          <ion-card>
+            <ion-img src="{{cocteles.imagen}}" alt="{{cocteles.nombre}}"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>{{cocteles.tipoId}}</ion-card-subtitle>
+              <ion-card-title>
+                <ion-text>{{cocteles.nombre}}</ion-text><br>
+                <ion-text>${{cocteles.precio}}</ion-text>
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-text>{{cocteles.descripcion}}</ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button routerLink="/home">
+              <ion-icon name="home"></ion-icon>
+            </ion-button>
+            <ion-button routerLink="/entradas">
+              <ion-icon name="nutrition"></ion-icon>
+            </ion-button>
+            <ion-button routerLink="/principales">
+              <ion-icon name="fast-food"></ion-icon>
+            </ion-button>
+            <ion-button routerLink="/bebidas">
+              <ion-icon name="cafe"></ion-icon>
+            </ion-button>
+            <ion-button routerLink="/postres">
+              <ion-icon name="ice-cream"></ion-icon>
+            </ion-button>
+            <ion-button routerLink="/cocteles">
+              <ion-icon name="wine"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
