@@ -35,16 +35,18 @@
   font-palette: dark;
   --ion-text-color: #FFFFFF;
   text-align: center;
+  color: rgb(240, 119, 6);
 }
 
 .card-title{
   font-size: large;
   color: black;
+  
 }
 
 ion-content{
-  --ion-card-background: #e0e0e0;
-  --background: url(assets/Img/Fondo_home.png) no-repeat center/cover fixed;
+  --ion-card-background:rgb(235, 235, 235);
+  --background: url(assets/Img/Fondo_home3.png) no-repeat center/cover fixed;
 }
 ion-text {
   color:black;
