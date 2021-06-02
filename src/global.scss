@@ -24,20 +24,36 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
 
 .titulo{
-  font-family: "HVD Bodedo";
-  font-size: x-large;
-  font-palette: light;
+    font-size: x-large;
+  font-palette: dark;
   --ion-text-color: #FFFFFF;
+  text-align: center;
 }
 
 .card-title{
-  font-family: "Bebas Neue";
   font-size: large;
+  color: black;
 }
 
 ion-content{
-  --ion-card-background: #ac634b;
+  --ion-card-background: #e0e0e0;
   --background: url(assets/Img/Fondo_home.png) no-repeat center/cover fixed;
+}
+ion-text {
+  color:black;
+}
+
+ion-card-subtitle {
+  color: #555555;
+}
+.text-white {
+  color:blanchedalmond;
+  text-align: center;
 }
