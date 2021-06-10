@@ -1,13 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "AR_Menu",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 0
-    }
-  },
-  "cordova": {}
+	"appId": "io.ionic.starter",
+	"appName": "AR_Menu",
+	"webDir": "www",
+	"bundledWebRuntime": false
 }
