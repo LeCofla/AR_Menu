@@ -1,0 +1,55 @@
+<ion-header translucent="true" mode="ios">
+  <ion-toolbar color="dark">
+    <ion-title>PRINCIPALES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div id="container">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col *ngFor="let principal of principales" size-xl="3" size-lg="3" size-md="6" size-sm="6" size-xs="12">
+          <ion-card>
+            <ion-img src="{{principal.imagen}}" alt="{{principal.nombre}}"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>{{principal.tipoId}}</ion-card-subtitle>
+              <ion-card-title>
+                <ion-text>{{principal.nombre}}</ion-text>
+                <br>
+                <ion-text>${{principal.precio}}</ion-text>
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-text>{{principal.descripcion}}</ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer translucent="true" mode="ios">
+  <ion-toolbar color="dark">
+    <ion-buttons class="ion-justify-content-center" >
+      <ion-button routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/entradas">
+        <ion-icon name="nutrition"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/principales">
+        <ion-icon name="fast-food"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/bebidas">
+        <ion-icon name="cafe"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/postres">
+        <ion-icon name="ice-cream"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/cocteles">
+        <ion-icon name="wine"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
