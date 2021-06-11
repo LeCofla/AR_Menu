@@ -33,6 +33,14 @@ const routes: Routes = [
         loadChildren: () => import('../cocteles/cocteles.module').then( m => m.CoctelesPageModule)
       },
       {
+        path: 'registro',
+        loadChildren: () => import('../registro/registro.module').then( m => m.RegistroPageModule)
+      },
+      {
+        path: 'login',
+        loadChildren: () => import('../login/login.module').then( m => m.LoginPageModule)
+      },
+      {
         path: '',
         redirectTo: '/home',
         pathMatch: 'full'
