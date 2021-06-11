@@ -1,6 +1,24 @@
 <ion-tabs>
 
-  <ion-tab-bar color="dark" slot="bottom">
+  <ion-fab class="ion-padding" horizontal="end" vertical="top" slot="fixed">
+    <ion-fab-button color="light">
+      <ion-icon name="person"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list class="ion-padding">
+      <ion-chip color="light" >
+        <ion-icon color="dark" name="log-in"></ion-icon>
+        <ion-label color="dark">Login</ion-label>
+      </ion-chip>
+      <ion-chip color="light" routerLink="/registro">
+        <ion-icon color="dark" name="person-add"></ion-icon>
+        <ion-label color="dark">Registro</ion-label>
+      </ion-chip>
+
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-tab-bar id="menu" color="dark" slot="bottom">
     <ion-tab-button tab="home">
       <ion-icon name="home"></ion-icon>
       <ion-label>Inicio</ion-label>
@@ -19,6 +37,11 @@
     <ion-tab-button tab="bebidas">
       <ion-icon name="cafe"></ion-icon>
       <ion-label>Bebidas</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="postres">
+      <ion-icon name="ice-cream"></ion-icon>
+      <ion-label>Postres</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="cocteles">
