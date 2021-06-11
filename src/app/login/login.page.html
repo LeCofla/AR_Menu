@@ -1,14 +1,14 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar color="dark">
     <ion-title>LOGIN</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen>
+<ion-content fullscreen="true">
   <div id="container">
     <ion-grid>
       <ion-row class="ion-justify-content-center">
-        <ion-col size-xl="4" size-lg="6" size-md="8" size-sm="8" size-xs="10">
+        <ion-col>
           <form #f="ngForm" (ngSubmit)="loginForm(f)" novalidate>
             <ion-item>
               <ion-label>Email</ion-label>
@@ -26,9 +26,11 @@
             <ion-item *ngIf="!passwordCtrl.valid && passwordCtrl.touched">
               <ion-text color="danger">Password is required</ion-text>
             </ion-item>
-            <ion-button type="submit" [disabled]="!f.valid">
-              Login
-            </ion-button>
+            <ion-item align="center">
+              <ion-button type="submit" [disabled]="!f.valid">
+                Login
+              </ion-button>
+            </ion-item>
 
             <div class="ion-padding" *ngIf="f.valid">
               Form username: {{ f.value.username }}<br/>
