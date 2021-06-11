@@ -46,14 +46,11 @@
   margin-right: auto;
 }
 
-ion-toolbar {
-  padding-bottom: 10px;
-}
-
 ion-title {
   font-weight: 900;
   font-size: x-large;
-  margin: 10px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .card-title{
@@ -104,5 +101,8 @@ ion-card-subtitle {
   }
   ion-content {
     --background: url(assets/Img/fondo-home-xs.jpg) no-repeat center/cover fixed;
+  }
+  ion-tab-button ion-label {
+    display: none;
   }
 }
