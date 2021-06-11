@@ -1,35 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-grid>
-      <ion-row class="ion-align-items-center">
-        <ion-col></ion-col>
-        <ion-col size-lg="6" size-md="6" size-sm="6" size-xl="6">
-          <div class="titulo">
-            <ion-text class="text-white">BEBIDAS</ion-text>
-          </div>
-        </ion-col>
-        <ion-col></ion-col>
-      </ion-row>
-    </ion-grid>
+<ion-header translucent="true" mode="ios">
+  <ion-toolbar color="dark">
+    <ion-title>BEBIDAS</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div *ngFor="let bebidas of bebidas" class="ion-align-items-center">
+<ion-content fullscreen>
+  <div id="container">
     <ion-grid>
-      <ion-row class="ion-align-items-center">
-        <ion-col size-lg="6" size-md="6" size-sm="6" size-xl="6">
+      <ion-row class="ion-justify-content-center">
+        <ion-col *ngFor="let bebida of bebidas" size-xl="3" size-lg="3" size-md="6" size-sm="6" size-xs="12">
           <ion-card>
-            <ion-img src="{{bebidas.imagen}}" alt="{{bebidas.nombre}}"></ion-img>
+            <ion-img src="{{bebida.imagen}}" alt="{{bebida.nombre}}"></ion-img>
             <ion-card-header>
-              <ion-card-subtitle>{{bebidas.tipoId}}</ion-card-subtitle>
+              <ion-card-subtitle>{{bebida.tipoId}}</ion-card-subtitle>
               <ion-card-title>
-                <ion-text>{{bebidas.nombre}}</ion-text><br>
-                <ion-text>${{bebidas.precio}}</ion-text>
+                <ion-text>{{bebida.nombre}}</ion-text>
+                <br>
+                <ion-text>${{bebida.precio}}</ion-text>
               </ion-card-title>
             </ion-card-header>
             <ion-card-content>
-              <ion-text>{{bebidas.descripcion}}</ion-text>
+              <ion-text>{{bebida.descripcion}}</ion-text>
             </ion-card-content>
           </ion-card>
         </ion-col>
@@ -38,35 +29,27 @@
   </div>
 </ion-content>
 
-<ion-footer>
-  <ion-grid>
-    <ion-row class="ion-justify-content-center">
-      <ion-col></ion-col>
-      <ion-col>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-button routerLink="/home">
-              <ion-icon name="home"></ion-icon>
-            </ion-button>
-            <ion-button routerLink="/entradas">
-              <ion-icon name="nutrition"></ion-icon>
-            </ion-button>
-            <ion-button routerLink="/principales">
-              <ion-icon name="fast-food"></ion-icon>
-            </ion-button>
-            <ion-button routerLink="/bebidas">
-              <ion-icon name="cafe"></ion-icon>
-            </ion-button>
-            <ion-button routerLink="/postres">
-              <ion-icon name="ice-cream"></ion-icon>
-            </ion-button>
-            <ion-button routerLink="/cocteles">
-              <ion-icon name="wine"></ion-icon>
-            </ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-col>
-      <ion-col></ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-footer translucent="true" mode="ios">
+  <ion-toolbar color="dark">
+    <ion-buttons class="ion-justify-content-center" >
+      <ion-button routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/entradas">
+        <ion-icon name="nutrition"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/principales">
+        <ion-icon name="fast-food"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/bebidas">
+        <ion-icon name="cafe"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/postres">
+        <ion-icon name="ice-cream"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/cocteles">
+        <ion-icon name="wine"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-footer>
