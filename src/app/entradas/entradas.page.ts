@@ -8,9 +8,8 @@ import {EntradasServicioService} from '../core/servicios/entradas-servicio.servi
   providers:  [EntradasServicioService]
 })
 export class EntradasPage implements OnInit {
-
-  constructor(private entradaService: EntradasServicioService) { }
   entradas = this.entradaService.entradas;
+  constructor(private entradaService: EntradasServicioService) { }
 
   ngOnInit(): void{
   }

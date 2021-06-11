@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PostresServicioService} from "../core/servicios/postres-servicio.service";
+import {PostresServicioService} from '../core/servicios/postres-servicio.service';
 
 @Component({
   selector: 'app-postres',
@@ -8,8 +8,8 @@ import {PostresServicioService} from "../core/servicios/postres-servicio.service
   providers: [PostresServicioService]
 })
 export class PostresPage implements OnInit {
-  constructor(private postresService: PostresServicioService) { }
   postres = this.postresService.postres;
+  constructor(private postresService: PostresServicioService) { }
 
   ngOnInit() {
   }

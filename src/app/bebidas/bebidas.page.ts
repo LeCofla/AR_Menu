@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {BebidasServicioService} from "../core/servicios/bebidas-servicio.service";
+import {BebidasServicioService} from '../core/servicios/bebidas-servicio.service';
 
 @Component({
   selector: 'app-bebidas',
@@ -8,10 +8,8 @@ import {BebidasServicioService} from "../core/servicios/bebidas-servicio.service
   providers: [BebidasServicioService]
 })
 export class BebidasPage implements OnInit {
-
-  constructor(private bebidasService: BebidasServicioService) { }
   bebidas = this.bebidasService.bebidas;
-
+  constructor(private bebidasService: BebidasServicioService) { }
   ngOnInit() {
   }
 
