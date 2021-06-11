@@ -19,7 +19,7 @@ export class PostresServicioService {
       nombre: 'Torta de Chocolate',
       precio: '4.50',
       descripcion:  'Simplemente irresistible',
-      imagen: '/assets/Img/Torta de chocolate.jpg'
+      imagen: '/assets/Img/Torta-de-chocolate.jpg'
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export class PostresServicioService {
       nombre: 'Pastel de Manzana',
       precio: '8.00',
       descripcion:  'Atrapa en el primer bocado',
-      imagen: '/assets/Img/Pastel de manzana.jpg'
+      imagen: '/assets/Img/Pastel-de-manzana.jpg'
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export class PostresServicioService {
       nombre: 'Pastel con Helado',
       precio: '9.25',
       descripcion:  'Combina a tu gusto con variados sabores de helado',
-      imagen: '/assets/Img/Pastel con helado.jpg'
+      imagen: '/assets/Img/Pastel-con-helado.jpg'
     },
   ];
 

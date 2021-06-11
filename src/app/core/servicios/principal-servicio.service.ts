@@ -35,7 +35,7 @@ export class PrincipalServicioService {
       nombre: 'Sopa de Calabaza',
       precio: '5.50',
       descripcion:  'La apuesta más ligera y nutritiva',
-      imagen: '/assets/Img/Sopa de calabaza.jpg'
+      imagen: '/assets/Img/Sopa-de-calabaza.jpg'
     },
   ];
 
